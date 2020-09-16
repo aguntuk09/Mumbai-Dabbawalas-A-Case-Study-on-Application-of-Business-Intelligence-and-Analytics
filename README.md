@@ -55,7 +55,7 @@ Below is the entity relationship diagram for the database:
 <a id='mock'></a>
 
 #### Mock data insertions
-Files ending with _'*_INS.sql' and '*_UPD.sql'_ :
+Files ending with _'*INS.sql' and '*UPD.sql'_ :
 
 - Inserts the data for the tables under `employee`, `customer` and `salandser` schemas
 - Updates the data under `employee` and `customer` schemas for inactive personnel
