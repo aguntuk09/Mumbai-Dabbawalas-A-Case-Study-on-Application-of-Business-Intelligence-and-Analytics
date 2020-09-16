@@ -32,7 +32,7 @@ The Mumbai Tiffin Box Supplier's Association, commonly known as the Mumbai Dabba
 
 The diagram below provides details of the stages where new data are captured and updated to existing data are inserted into the database tables:
 
-
+![Screenshot1](/images/Dabbawala_Data_Capture_Points.png)
 
 <a id='components'></a>
 
@@ -50,7 +50,7 @@ File _'Database_architecture_CR.sql'_ :
 
 Below is the entity relationship diagram for the database:
 
-
+![Screenshot2](/images/Mumbai_Dabbawala_ER_Diagram.png)
 
 <a id='mock'></a>
 
@@ -102,7 +102,20 @@ In order to view the visualizations, open the below files in Power BI Desktop:
 
 ### Screenshots
 
-
+![Screenshot3](/images/active_customer_report.png)
+![Screenshot4](/images/active_employee_report.png)
+![Screenshot5](/images/customer_dashboard.png)
+![Screenshot6](/images/customer_dropoff_area_report.png)
+![Screenshot7](/images/customer_infraction_report.png)
+![Screenshot8](/images/customer_pickup_area_report.png)
+![Screenshot9](/images/employee_dashboard.png)
+![Screenshot10](/images/employee_grade_report.png)
+![Screenshot11](/images/employee_infraction_report.png)
+![Screenshot12](/images/inactive_customer_infraction_report.png)
+![Screenshot13](/images/inactive_customer_report.png)
+![Screenshot14](/images/inactive_employees_report.png)
+![Screenshot15](/images/inactive_employee_infraction_report.png)
+![Screenshot16](/images/infractions_dashboard.png)
 
 <a id='config'></a>
 
