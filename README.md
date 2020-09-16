@@ -11,7 +11,7 @@
 - [Components](#components)
   - [Architecture creation](#arch)
   - [Mock data insertions](#mock)
-  - [Creating visualizations](#model)
+  - [Creating visualizations](#visual)
 - [Running the Code](#running)
 - [Screenshots](#screenshots)
 - [System Configuration steps](#config)
@@ -44,3 +44,107 @@ There are three components to this project:
 #### Architecture creation
 File _'Database_architecture_CR.sql'_ :
 
+- Creates the `mumdab` database.
+- Creates the schemas `employee`, `customer` and `salandser` along with the tables under them.
+- Creates the triggers for the tables 
+
+Below is the entity relationship diagram for the database:
+
+
+
+<a id='mock'></a>
+
+#### Mock data insertions
+Files ending with _'*_INS.sql' and '*_UPD.sql'_ :
+
+- Inserts the data for the tables under `employee`, `customer` and `salandser` schemas
+- Updates the data under `employee` and `customer` schemas for inactive personnel
+- Executes the triggers automatically as per the insertions and updations in the tables
+
+<a id='visual'></a>
+
+#### Creating visualizations
+Files ending with _'*.pbix'_ :
+
+- Contains the visualizations created in Power BI
+
+<a id='running'></a>
+
+### Running the Code
+
+In order to create the database and its underlying objects, run the following SQL scripts in the order given below:
+
+- Database_architecture_CR.sql
+- Employee_data_INS.sql
+- Employee_grade_INS.sql
+- Employee_type_INS.sql
+- EmployeeFunctions_Data_INS.sql
+- Employee_infractions_INS.sql
+- Salandser_area_INS.sql
+- Customer_Data_INS.sql
+- customer_pickup_INS.sql
+- customer_dropoff_INS.sql
+- customer_infractions_INS.sql
+- Inactive_Customers_UPD.sql
+
+In order to view the visualizations, open the below files in Power BI Desktop:
+
+- Active Customers.pbix
+- Active Employees.pbix
+- Customer Dashboard.pbix
+- Customer Infraction.pbix
+- Employee Dashboard.pbix
+- Employee Infraction.pbix
+- Inactive Customer.pbix
+- Infraction.pbix
+
+<a id='screenshots'></a>
+
+### Screenshots
+
+
+
+<a id='config'></a>
+
+### System Configuration Steps
+
+In order to run the code and see the visualizations, below are the necessary requirements:
+
+- PowerBI: The visualizations have been created in PowerBI and hence requires PowerBI Desktop.
+- Microsoft SQL Server: The data for the visualizations has been created as a database in SQL Server and requires the installation of SQL Server Express Edition along with SQL Server Management Studio as the IDE to run the scripts
+
+<a id='files'></a>
+
+### File Descriptions
+
+Below are the files and the folders that are part of the project implementation:
+
+1. SQL Server Codes:
+- Database_architecture_CR.sql: Contains the SQL script for database architecture creation
+- Employee_data_INS.sql: Contains the SQL scripts for employee details data insertion
+- Employee_grade_INS.sql: Contains the SQL scripts for employee grade data insertion
+- Employee_type_INS.sql: Contains the SQL scripts for employee type data insertion
+- EmployeeFunctions_Data_INS.sql: Contains the SQL scripts for employee functions data insertion
+- Employee_infractions_INS.sql: Contains the SQL scripts for employee infractions data insertion
+- Salandser_area_INS.sql: Contains the SQL scripts for area code data insertion
+- Customer_Data_INS.sql: Contains the SQL scripts for customer details data insertion
+- customer_pickup_INS.sql: Contains the SQL scripts for customer pickup information data insertion
+- customer_dropoff_INS.sql: Contains the SQL scripts for customer dropoff information data insertion
+- customer_infractions_INS.sql: Contains the SQL scripts for customer infractions data insertion
+- Inactive_Customers_UPD.sql: Contains the SQL scripts for update customer details to show inactive customers
+
+2. Power BI packages:
+- Active Customers.pbix: Contains the visualizations for active customers
+- Active Employees.pbix: Contains the visualizations for active employees
+- Customer Dashboard.pbix: Contains the visualizations for all customers
+- Customer Infraction.pbix: Contains the visualizations for customer infractions
+- Employee Dashboard.pbix: Contains the visualizations for all employees
+- Employee Infraction.pbix: Contains the visualizations for employee infractions
+- Inactive Customer.pbix: Contains the visualizations for inactive customers
+- Infraction.pbix: Contains the visualizations for all personnel infractions
+
+<a id='credits'></a>
+
+### Credits and Acknowledgements
+
+* [NCI](https://www.ncirl.ie/) for a challenging project as part of their full-time masters in data analytics course subject 'Business Intelligence and Business Analytics'
